@@ -167,8 +167,8 @@
 
     <LinearLayout
         android:id="@+id/login3"
-        android:layout_width="300dp"
-        android:layout_height="70dp"
+        android:layout_width="328dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,7 +180,7 @@
 
         <Button
             android:id="@+id/btn_start"
-            android:layout_width="150dp"
+            android:layout_width="164dp"
             android:layout_height="50dp"
             android:background="#8BC34A"
             android:onClick="Login"
@@ -190,7 +190,7 @@
 
         <Button
             android:id="@+id/btn_registro"
-            android:layout_width="150dp"
+            android:layout_width="164dp"
             android:layout_height="50dp"
             android:background="#8BC34A"
             android:onClick="registro"
