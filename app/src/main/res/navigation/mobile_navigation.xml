@@ -22,4 +22,19 @@
         android:name="com.gaby.amigablecasa.ui.slideshow.SlideshowFragment"
         android:label="@string/menu_slideshow"
         tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_comer"
+        android:name="com.gaby.amigablecasa.nav_comer"
+        android:label="fragment_nav_comer"
+        tools:layout="@layout/fragment_nav_comer" />
+    <fragment
+        android:id="@+id/nav_ccc"
+        android:name="com.gaby.amigablecasa.nav_ccc"
+        android:label="fragment_nav_ccc"
+        tools:layout="@layout/fragment_nav_ccc" />
+    <fragment
+        android:id="@+id/nav_rec"
+        android:name="com.gaby.amigablecasa.nav_rec"
+        android:label="fragment_nav_rec"
+        tools:layout="@layout/fragment_nav_rec" />
 </navigation>
