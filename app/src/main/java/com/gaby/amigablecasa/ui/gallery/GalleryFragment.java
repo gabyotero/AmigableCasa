@@ -15,6 +15,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.gaby.amigablecasa.Consejos;
+import com.gaby.amigablecasa.MenuConsejos;
 import com.gaby.amigablecasa.R;
 
 public class GalleryFragment extends Fragment {
@@ -38,7 +39,7 @@ public class GalleryFragment extends Fragment {
         btn_consejos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getContext(), Consejos.class);
+                Intent i = new Intent(getContext(), MenuConsejos.class);
                 startActivity(i);
             }
         });
