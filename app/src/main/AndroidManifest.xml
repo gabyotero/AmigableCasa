@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
+        <activity android:name=".Consejos"></activity>
         <activity
             android:name=".MenuPrincipal"
             android:label="@string/title_activity_menu_principal"
-            android:theme="@style/Theme.AmigableCasa.NoActionBar"></activity>
+            android:theme="@style/Theme.AmigableCasa.NoActionBar" />
         <activity android:name=".Formulario" />
         <activity android:name=".MainActivity">
             <intent-filter>

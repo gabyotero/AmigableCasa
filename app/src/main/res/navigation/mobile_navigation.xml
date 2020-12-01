@@ -8,33 +8,33 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.gaby.amigablecasa.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Vida verde"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.gaby.amigablecasa.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Aqua"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.gaby.amigablecasa.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Basura en su lugar"
         tools:layout="@layout/fragment_slideshow" />
     <fragment
         android:id="@+id/nav_comer"
         android:name="com.gaby.amigablecasa.nav_comer"
-        android:label="fragment_nav_comer"
+        android:label="Hora de comer"
         tools:layout="@layout/fragment_nav_comer" />
     <fragment
         android:id="@+id/nav_ccc"
         android:name="com.gaby.amigablecasa.nav_ccc"
-        android:label="fragment_nav_ccc"
+        android:label="Compras con conciencia"
         tools:layout="@layout/fragment_nav_ccc" />
     <fragment
         android:id="@+id/nav_rec"
         android:name="com.gaby.amigablecasa.nav_rec"
-        android:label="fragment_nav_rec"
+        android:label="Reciclaje creativo"
         tools:layout="@layout/fragment_nav_rec" />
 </navigation>

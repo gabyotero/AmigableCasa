@@ -39,16 +39,16 @@
 
     <ImageView
         android:id="@+id/casa"
-        android:layout_width="411dp"
-        android:layout_height="306dp"
+        android:layout_width="260dp"
+        android:layout_height="219dp"
         android:contentDescription="Logo"
-
+        android:src="@drawable/menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.119" />
 
     <LinearLayout
         android:id="@+id/login1"
@@ -167,7 +167,7 @@
 
     <LinearLayout
         android:id="@+id/login3"
-        android:layout_width="328dp"
+        android:layout_width="310dp"
         android:layout_height="80dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -180,7 +180,8 @@
 
         <Button
             android:id="@+id/btn_start"
-            android:layout_width="164dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="155dp"
             android:layout_height="50dp"
             android:background="#8BC34A"
             android:onClick="Login"
@@ -190,9 +191,11 @@
 
         <Button
             android:id="@+id/btn_registro"
-            android:layout_width="164dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="155dp"
             android:layout_height="50dp"
             android:background="#8BC34A"
+            android:backgroundTint="#93FAB6"
             android:onClick="registro"
             android:text="REGISTRO"
             android:visibility="visible"
