@@ -34,7 +34,7 @@
         app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498">
+        app:layout_constraintVertical_bias="0.722">
 
         <ImageView
             android:id="@+id/imageView7"
@@ -67,43 +67,57 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="318dp"
-        android:layout_height="379dp"
+        android:layout_width="320dp"
+        android:layout_height="448dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.498">
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Reutilizar el agua que resulta de la última carga de la lavadora para limpiar el baño" />
+        app:layout_constraintVertical_bias="0.767">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Almacenar el agua que resulta de la espera de agua caliente al bañarse para regar las plantas o lavar el auto." />
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:text="Dúchate en lugar de bañarte y no estés demasiado tiempo bajo la ducha. De ser posible, reduce la duración un par de minutos." />
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Cerrar la llave mientras te lavas la mano y dientes" />
+            android:layout_height="104dp"
+            android:text="Cierra la llave del grifo al lavarte los dientes, enjabonarte las manos o afeitarte de lo contrario estarás desperdiciando 5 litros de agua por cada minuto que la dejes abierta." />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="126dp"
+            android:text="Utiliza un balde o cubeta grande de agua para recolectar el agua fría que cae de la regadera antes de llegar a la temperatura que deseas. Con esta agua puedes lavarte las manos, los platos, tu automóvil o incluso regar tu jardín. Puedes ahorrar hasta 8 litros de agua por minuto." />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Vigila que el tanque del inodoro no tenga fugas de agua. Controla también que la cadena se cierra al vaciarse el depósito." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="102dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="339dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="TextView" />
+            app:srcCompat="@drawable/aguawc" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

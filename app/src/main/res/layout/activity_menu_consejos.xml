@@ -60,7 +60,7 @@
 
     <ImageView
         android:id="@+id/img_regresar"
-        android:layout_width="61dp"
+        android:layout_width="60dp"
         android:layout_height="60dp"
         app:srcCompat="@drawable/regresar"
         tools:layout_editor_absoluteX="21dp"
