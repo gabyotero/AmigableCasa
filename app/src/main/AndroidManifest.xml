@@ -12,7 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
-        <activity android:name=".basura_inorganica"></activity>
+        <activity android:name=".manualidad_madera"></activity>
+        <activity android:name=".manualidad_plastico" />
+        <activity android:name=".manualidad_papel" />
+        <activity android:name=".manualidad_carton" />
+        <activity android:name=".basura_inorganica" />
         <activity android:name=".basura_organica" />
         <activity android:name=".avance_basura" />
         <activity android:name=".idea_botes" />

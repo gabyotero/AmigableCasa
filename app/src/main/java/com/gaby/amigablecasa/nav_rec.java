@@ -1,5 +1,6 @@
 package com.gaby.amigablecasa;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,13 +8,20 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link nav_rec#newInstance} factory method to
  * create an instance of this fragment.
  */
+
 public class nav_rec extends Fragment {
+
+    ImageView img_carton, img_madera, img_botellas, img_papel, img_reg_rec;
+    View vista;
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -53,12 +61,54 @@ public class nav_rec extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav_rec, container, false);
+        vista=inflater.inflate(R.layout.fragment_nav_rec, container, false);
+        img_carton=(ImageView)vista.findViewById(R.id.img_carton);
+        img_carton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), manualidad_carton.class);
+                startActivity(i);
+            }
+        });
+        img_papel=(ImageView)vista.findViewById(R.id.img_papel);
+        img_papel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), manualidad_papel.class);
+                startActivity(i);
+            }
+        });
+        img_madera=(ImageView)vista.findViewById(R.id.img_madera);
+        img_madera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), manualidad_madera.class);
+                startActivity(i);
+            }
+        });
+        img_botellas=(ImageView)vista.findViewById(R.id.img_botellas);
+        img_botellas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), manualidad_plastico.class);
+                startActivity(i);
+            }
+        });
+        img_reg_rec=(ImageView)vista.findViewById(R.id.img_reg_rec);
+        img_reg_rec.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               // onBackPressed();
+            }
+        });
+        return vista;
     }
 }
