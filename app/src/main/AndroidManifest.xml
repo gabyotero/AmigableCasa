@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
-        <activity android:name=".Consejo_lavado"></activity>
+        <activity android:name=".idea_botes"></activity>
+        <activity android:name=".Consejo_lavado" />
         <activity android:name=".Consejo_lluvia" />
         <activity android:name=".Consejo_wc" />
         <activity android:name=".Consejo_cocina" />
