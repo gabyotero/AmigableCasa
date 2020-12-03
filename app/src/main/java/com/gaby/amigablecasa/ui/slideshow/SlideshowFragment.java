@@ -16,9 +16,9 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.gaby.amigablecasa.avance_basura;
-import com.gaby.amigablecasa.idea_botes;
 import com.gaby.amigablecasa.basura_organica;
 import com.gaby.amigablecasa.basura_inorganica;
+import com.gaby.amigablecasa.idea_botes;
 import com.gaby.amigablecasa.R;
 
 public class SlideshowFragment extends Fragment {

@@ -43,7 +43,7 @@ public class idea_botes extends AppCompatActivity {
 
         //animacion
         v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
-       v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
+        v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
     }
 

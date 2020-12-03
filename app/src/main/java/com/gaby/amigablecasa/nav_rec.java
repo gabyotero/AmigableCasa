@@ -62,12 +62,13 @@ public class nav_rec extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+
         // Inflate the layout for this fragment
         vista=inflater.inflate(R.layout.fragment_nav_rec, container, false);
         img_carton=(ImageView)vista.findViewById(R.id.img_carton);
@@ -102,13 +103,7 @@ public class nav_rec extends Fragment {
                 startActivity(i);
             }
         });
-        img_reg_rec=(ImageView)vista.findViewById(R.id.img_reg_rec);
-        img_reg_rec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               // onBackPressed();
-            }
-        });
+
         return vista;
     }
 }

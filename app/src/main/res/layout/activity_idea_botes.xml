@@ -2,50 +2,51 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="500dp"
-    android:layout_height="10000dp"
-    android:orientation="vertical"
-    tools:context=".idea_botes"><![CDATA[
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Ideas_basura">
+    android:orientation="vertical"
+    tools:context=".idea_botes">
 
-    ]]>
-
-
-    <ImageView
-        android:id="@+id/img_reg_carrusel"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginRight="420dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.005"
-        app:srcCompat="@drawable/regresar" />
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
-    <ViewFlipper
-        android:id="@+id/carrusel"
-        android:layout_width="200dp"
-        android:layout_height="250dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="120dp"
-        android:layout_marginRight="70dp"
-        android:layout_marginBottom="100dp">
+        <ImageView
+            android:id="@+id/img_reg_carrusel"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="100dp"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.005"
+            app:srcCompat="@drawable/regresar" />
+
+        <ViewFlipper
+            android:id="@+id/carrusel"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="100dp">
 
 
-    </ViewFlipper>
+        </ViewFlipper>
 
-    <ImageView
-        android:id="@+id/imag_texto"
-        android:layout_width="370dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginBottom="500dp"
-        app:srcCompat="@drawable/titulo" />
+        <ImageView
+            android:id="@+id/imag_texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/titulo" />
+
+    </LinearLayout>
 
 </LinearLayout>
-
