@@ -3,15 +3,25 @@ package com.gaby.amigablecasa;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 public class idea_botes extends AppCompatActivity {
     ViewFlipper v_flipper;
+    ImageView img_reg_carrusel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_idea_botes);
+        img_reg_carrusel=(ImageView)findViewById(R.id.img_reg_carrusel);
+
+        img_reg_carrusel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
         int images[]= {R.drawable.bote1, R.drawable.bote2, R.drawable.bote3, R.drawable.bote4, R.drawable.bote5,
                 R.drawable.bote6,R.drawable.bote7, R.drawable.bote8,R.drawable.bote9, R.drawable.bote10};
@@ -36,4 +46,6 @@ public class idea_botes extends AppCompatActivity {
        v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
     }
+
+
 }

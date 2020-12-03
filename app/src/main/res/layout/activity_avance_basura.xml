@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".avance_basura">
+
+    <ImageView
+        android:id="@+id/img_reg_avance"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005"
+        app:srcCompat="@drawable/regresar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="128dp"
+        android:layout_height="37dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046">
+
+        <TextView
+            android:id="@+id/textView_avance"
+            android:layout_width="139dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Avance"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_p1"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.167">
+
+        <TextView
+            android:id="@+id/tv_p1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En una escala del 1 al 10, donde 1 es nada y 10 es mucho ¿Qué tanto separaste de manera correcta toda la basura que se generó el día de hoy en tu hogar?" />
+
+        <EditText
+            android:id="@+id/edt_r1"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Respuesta"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_p2"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348">
+
+        <TextView
+            android:id="@+id/tv_p2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En una escala del 1 al 10, donde 1 es nada y 10 es mucho ¿Qué tanta flojera te dio el día de hoy separar la basura?" />
+
+        <EditText
+            android:id="@+id/edt_r2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Respuestas"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_p3"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.522">
+
+        <TextView
+            android:id="@+id/tv_p3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de basura se generó más el día de hoy en tu hogar?" />
+
+        <EditText
+            android:id="@+id/edt_r3"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Respuesta"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_p4"
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.668">
+
+        <TextView
+            android:id="@+id/tv_p4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Qué tipo de basura se generó más el día de hoy en tu hogar?" />
+
+        <EditText
+            android:id="@+id/edt_r4"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Respuesta"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_p5"
+        android:layout_width="330dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.825">
+
+        <TextView
+            android:id="@+id/tv_p5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="En una escala del 1 al 10, donde 1 es nada y 10 es mucho ¿Qué tanto se sigue generando basura de materiales no reutilizables en tu hogar?" />
+
+        <EditText
+            android:id="@+id/edt_r5"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Respuesta"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_botones"
+        android:layout_width="196dp"
+        android:layout_height="61dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976">
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="163dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Enviar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

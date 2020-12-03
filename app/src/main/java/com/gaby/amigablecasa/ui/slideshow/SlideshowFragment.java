@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -14,12 +15,15 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.gaby.amigablecasa.Consejo_cocina;
+import com.gaby.amigablecasa.avance_basura;
 import com.gaby.amigablecasa.idea_botes;
+import com.gaby.amigablecasa.basura_organica;
+import com.gaby.amigablecasa.basura_inorganica;
 import com.gaby.amigablecasa.R;
 
 public class SlideshowFragment extends Fragment {
     Button btn_idea, btn_avance;
+    ImageView img_organica, img_inorganica;
     private SlideshowViewModel slideshowViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -34,11 +38,39 @@ public class SlideshowFragment extends Fragment {
                 textView.setText(s);
             }
         });
+
         btn_idea=(Button)root.findViewById(R.id.btn_idea);
         btn_idea.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getContext(), idea_botes.class);
+                startActivity(i);
+            }
+        });
+
+        btn_avance=(Button)root.findViewById(R.id.btn_avance);
+        btn_avance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), avance_basura.class);
+                startActivity(i);
+            }
+        });
+
+        img_organica=(ImageView) root.findViewById(R.id.img_organica);
+        img_organica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), basura_organica.class);
+                startActivity(i);
+            }
+        });
+
+        img_inorganica=(ImageView) root.findViewById(R.id.img_inorganica);
+        img_inorganica.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), basura_inorganica.class);
                 startActivity(i);
             }
         });

@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         new Restful(this, "login",
                 user_log.getText().toString(),
                 pass_log.getText().toString()).execute();
+       //ew Restful(this, "data").execute();
     }
 
     public void GetData(View view){

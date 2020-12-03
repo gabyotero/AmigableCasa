@@ -134,6 +134,13 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
                             list3[0][1] = row.getString("respuesta");
                             // list3[0][2]=list3[0][1]["user"];
                             break;
+                        case "data":
+                            list3[0][0] = status;
+                            list3[0][1] = row.getString("respuesta");
+                            // list3[0][2]=list3[0][1]["user"];
+                            list3[0][2] =  row.getString("habitantes");
+                            Log.d("Datos: ","janaaaa"+row.getString("habitantes"));
+                            break;
                     }
                 }
                 return list3;
@@ -200,6 +207,9 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
                     case "enviar":
                         ((Formulario)context).formOk();
                         break;
+                    case "data":
+
+                            break;
                 }
             } else {
                 if (resul[0][0].equals("500")) {
@@ -217,10 +227,12 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
     {
         switch(info)
         {
-            case "registro": return url_p+"control.php?action=registro&usr="+nombre+"&pass="+pass+"&name="+name+"&lastn"+lastn;
+            case "registro": return url_p+"control.php?action=registro&usr="+nombre+"&pass="+pass+"&name="+name+"&lastn="+lastn;
             case "login": return url_p+"control.php?action=login&usr="+nombre+"&pass="+pass;
             case "GetData": return url_p+"control.php?action="+info;
-            case "enviar": return url_p+"control.php?action=enviar&r1="+r1+"&r3="+r3+"&r4="+r4+"&r5="+r5+"&r6"+r6;
+            case "enviar": return url_p+"control.php?action=enviar&r1="+r1+"&r3="+r3+"&r4="+r4+"&r5="+r5+"&r6="+r6;
+            case "data": return url_p+"control.php?action="+info;
+
             default: return url_p+"control_p.php?action=error";
         }
     }

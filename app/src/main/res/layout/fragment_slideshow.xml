@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.962" />
 
     <ImageView
-        android:id="@+id/imageView26"
+        android:id="@+id/img_inorganica"
         android:layout_width="174dp"
         android:layout_height="395dp"
         android:src="@drawable/inorganica"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.532" />
 
     <ImageView
-        android:id="@+id/imageView27"
+        android:id="@+id/img_organica"
         android:layout_width="140dp"
         android:layout_height="350dp"
         android:src="@drawable/organica"

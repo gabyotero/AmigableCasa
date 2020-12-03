@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
-        <activity android:name=".idea_botes"></activity>
+        <activity android:name=".basura_inorganica"></activity>
+        <activity android:name=".basura_organica" />
+        <activity android:name=".avance_basura" />
+        <activity android:name=".idea_botes" />
         <activity android:name=".Consejo_lavado" />
         <activity android:name=".Consejo_lluvia" />
         <activity android:name=".Consejo_wc" />
