@@ -28,11 +28,6 @@
         android:label="Hora de comer"
         tools:layout="@layout/fragment_nav_comer" />
     <fragment
-        android:id="@+id/nav_ccc"
-        android:name="com.gaby.amigablecasa.nav_ccc"
-        android:label="Compras con conciencia"
-        tools:layout="@layout/fragment_nav_ccc" />
-    <fragment
         android:id="@+id/nav_rec"
         android:name="com.gaby.amigablecasa.nav_rec"
         android:label="Reciclaje creativo"

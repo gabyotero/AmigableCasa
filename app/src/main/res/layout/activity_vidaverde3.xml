@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".vidaverde2">
+    tools:context=".vidaverde3">
 
 
     <ImageView
-        android:id="@+id/img_regresarsq"
+        android:id="@+id/img_regresarpl"
         android:layout_width="60dp"
         android:layout_height="60dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,9 +20,9 @@
         app:srcCompat="@drawable/regresar" />
 
     <com.denzcoskun.imageslider.ImageSlider
-        android:id="@+id/Sliderr"
-        android:layout_width="405dp"
-        android:layout_height="622dp"
+        android:id="@+id/Slider2"
+        android:layout_width="369dp"
+        android:layout_height="522dp"
         app:iss_auto_cycle="true"
         app:iss_corner_radius="10"
         app:iss_delay="0"
@@ -31,7 +31,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.382" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

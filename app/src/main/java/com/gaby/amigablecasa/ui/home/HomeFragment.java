@@ -17,10 +17,11 @@ import androidx.lifecycle.ViewModelProvider;
 
 
 import com.gaby.amigablecasa.R;
+import com.gaby.amigablecasa.vidaverde3;
+import com.gaby.amigablecasa.vidaverde2;
 import com.gaby.amigablecasa.vidaverde1;
-
 public class HomeFragment extends Fragment {
-    ImageView img_sustent;
+    ImageView img_sustent, img_sabias, img_plantas;
     private HomeViewModel homeViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
@@ -40,6 +41,22 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getContext(), vidaverde1.class);
+                startActivity(i);
+            }
+        });
+        img_sabias=root.findViewById(R.id.img_sabias);
+        img_sabias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), vidaverde2.class);
+                startActivity(i);
+            }
+        });
+        img_plantas=root.findViewById(R.id.img_plantas);
+        img_plantas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), vidaverde3.class);
                 startActivity(i);
             }
         });
