@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
-        <activity android:name=".idea_botes"></activity>
+        <activity android:name=".vidaverde2"></activity>
+        <activity android:name=".vidaverde1" />
+        <activity android:name=".idea_botes" />
         <activity android:name=".manualidad_madera" />
         <activity android:name=".manualidad_plastico" />
         <activity android:name=".manualidad_papel" />

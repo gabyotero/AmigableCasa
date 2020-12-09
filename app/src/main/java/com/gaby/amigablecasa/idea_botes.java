@@ -14,14 +14,14 @@ public class idea_botes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_idea_botes);
-        img_reg_carrusel=(ImageView)findViewById(R.id.img_reg_carrusel);
+        //img_reg_carrusel=(ImageView)findViewById(R.id.img_reg_carrusel);
 
-        img_reg_carrusel.setOnClickListener(new View.OnClickListener() {
+        /*img_reg_carrusel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 onBackPressed();
             }
-        });
+        });*/
 
         int images[]= {R.drawable.bote1, R.drawable.bote2, R.drawable.bote3, R.drawable.bote4, R.drawable.bote5,
                 R.drawable.bote6,R.drawable.bote7, R.drawable.bote8,R.drawable.bote9, R.drawable.bote10};
