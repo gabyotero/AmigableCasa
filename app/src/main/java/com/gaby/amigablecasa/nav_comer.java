@@ -1,12 +1,15 @@
 package com.gaby.amigablecasa;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -14,6 +17,8 @@ import android.view.ViewGroup;
  * create an instance of this fragment.
  */
 public class nav_comer extends Fragment {
+    View vista;
+    Button btn_alimentos, btn_recetas;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -59,6 +64,25 @@ public class nav_comer extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_nav_comer, container, false);
+        vista= inflater.inflate(R.layout.fragment_nav_comer, container, false);
+
+        btn_alimentos=vista.findViewById(R.id.btn_alimentos);
+        btn_alimentos.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), alimentosSust.class);
+                startActivity(i);
+            }
+        });
+        btn_recetas=vista.findViewById(R.id.btn_recetas);
+        btn_recetas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getContext(), menuRecetas.class);
+                startActivity(i);
+            }
+        });
+
+        return vista;
     }
 }
