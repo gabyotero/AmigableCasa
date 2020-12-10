@@ -17,17 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView26"
-            android:layout_width="312dp"
-            android:layout_height="377dp"
-            android:src="@drawable/alimentosrecetas"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <LinearLayout
+            android:id="@+id/linearLayout10"
             android:layout_width="298dp"
             android:layout_height="83dp"
             android:orientation="horizontal"
@@ -52,6 +43,17 @@
                 android:layout_weight="1"
                 android:text="recetas" />
         </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView26"
+            android:layout_width="312dp"
+            android:layout_height="495dp"
+            android:src="@drawable/menucomida"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.35" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </FrameLayout>
