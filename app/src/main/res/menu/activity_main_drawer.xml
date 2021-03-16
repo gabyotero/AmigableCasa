@@ -15,7 +15,7 @@
 
     </group>
 
-    <item android:title="Informacion General">
+    <item android:title="Información General">
         <menu>
              <item android:id="@+id/nav_home"
                 android:icon="@drawable/vidaverde"
