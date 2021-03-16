@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void datosOk(){
         mensaje("Ingreso correcto");
-        Intent i = new Intent(this,Formulario.class);
+        Intent i = new Intent(this,MenuPrincipal.class);
         startActivity(i);      //Abrir una actividad nueva
     }
 }
