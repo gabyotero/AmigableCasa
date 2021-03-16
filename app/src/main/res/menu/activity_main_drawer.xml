@@ -10,7 +10,7 @@
              android:title="Agua" />
         <item
             android:id="@+id/nav_luz"
-            android:icon="@drawable/aqua"
+            android:icon="@drawable/foco"
             android:title="Luz" />
 
     </group>
