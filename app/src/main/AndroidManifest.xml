@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AmigableCasa">
-        <activity android:name=".receta3"></activity>
+        <activity android:name=".receta3" />
         <activity android:name=".receta2" />
         <activity android:name=".receta1" />
         <activity android:name=".menuRecetas" />

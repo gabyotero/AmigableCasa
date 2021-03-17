@@ -32,4 +32,9 @@
         android:name="com.gaby.amigablecasa.nav_rec"
         android:label="Reciclaje creativo"
         tools:layout="@layout/fragment_nav_rec" />
+    <fragment
+        android:id="@+id/nav_focos"
+        android:name="com.gaby.amigablecasa.nav_focos"
+        android:label="Luz"
+        tools:layout="@layout/fragment_nav_focos" />
 </navigation>
