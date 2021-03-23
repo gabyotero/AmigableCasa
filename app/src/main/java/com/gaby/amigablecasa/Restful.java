@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.util.Log;
 
-import org.apache.http.client.ClientProtocolException;
+//import org.apache.http.client.ClientProtocolException;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,7 +28,7 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
     private String url_p="https://casaamigable.000webhostapp.com/";
     private Context context;
     private String info,nombre,pass,name,lastn;
-    private String r1, r3, r4, r5, r6;
+    private String r1, r3, r4, r5, r6, cant_foco;
 
     //Registro
     public Restful(Context context, String info,String nombre,String pass, String name, String lastn) {
@@ -52,15 +52,11 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
         Log.d("url","url:"+HTTP_RESTFUL);
     }
 
-    //Formulario
-    public Restful(Context context, String info, String r1,String r3, String r4, String r5, String r6) {
+    //Focos
+    public Restful(Context context, String info, String cant_foco) {
         this.context = context;
         this.info=info;
-        this.r1=r1;
-        this.r3=r3;
-        this.r4=r4;
-        this.r5=r5;
-        this.r6=r6;
+        this.cant_foco=cant_foco;
         HTTP_RESTFUL=getURL(info);
         Log.d("url","url:"+HTTP_RESTFUL);
     }
@@ -205,7 +201,7 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
                         else ((MainActivity)context).mensaje("verifica tus datos");
                         break;
                     case "enviar":
-                        ((Formulario)context).formOk();
+                        ((TotalFocos)context).formOk();
                         break;
                     case "data":
 
@@ -230,7 +226,8 @@ public class Restful  extends AsyncTask<Void,Void,String[][]> {
             case "registro": return url_p+"control.php?action=registro&usr="+nombre+"&pass="+pass+"&name="+name+"&lastn="+lastn;
             case "login": return url_p+"control.php?action=login&usr="+nombre+"&pass="+pass;
             case "GetData": return url_p+"control.php?action="+info;
-            case "enviar": return url_p+"control.php?action=enviar&r1="+r1+"&r3="+r3+"&r4="+r4+"&r5="+r5+"&r6="+r6;
+        //    case "enviar": return url_p+"control.php?action=enviar&r1="+r1+"&r3="+r3+"&r4="+r4+"&r5="+r5+"&r6="+r6;
+            case "enviar": return url_p+"control.php?action=enviar&cant_foco="+cant_foco;
             case "data": return url_p+"control.php?action="+info;
 
             default: return url_p+"control_p.php?action=error";

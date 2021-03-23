@@ -60,7 +60,7 @@ public class Formulario extends AppCompatActivity {
         startActivity(x);
     }
 
-    public void Enviar(View view) {
+ /*   public void Enviar(View view) {
         new Restful(this, "enviar",
                 editText_r1.getText().toString(),
                 editText_r3.getText().toString(),
@@ -75,5 +75,5 @@ public class Formulario extends AppCompatActivity {
     }
     public void mensaje(String s){
         Toast.makeText(this, s, Toast.LENGTH_SHORT).show();
-    }
+    } */
 }
